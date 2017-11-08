@@ -1,0 +1,15 @@
+.background, .box {
+  padding: 25px;
+  height: 100px;
+  width: 100px;
+  background-color: lightblue;
+  margin: 25px; }
+
+.box {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+
+// Importing _partial.css
+@import 'partial';
+
+// Setting the radius of the div box to convert them from boxes into circles
+$radius: 50%;
+ 
+// Setting the background of the divs
+.background{
+  padding: 25px;
+  height: 100px;
+  width: 100px;
+  background-color: $bgcolor; //Using color variable from _partial.SCSS file after importing
+  margin:25px;  // Creating margin space between the divs
+}
+
+// Creating @mixin with the name border-radius 
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Setting the shape and background height, width and color of the div boxes 
+.box { 
+  @include border-radius($radius); 
+  text-align: center;
+  @extend .background;
+}
+
+
+
+ 
+
